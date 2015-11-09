@@ -75,7 +75,7 @@ fn main() {
 	let mut rdr = csv::Reader::from_string(body);
 	let speakers = rdr.decode()
 		.collect::<csv::Result<Vec<Speaker>>>().unwrap()
-		.into_iter().filter(|x| x.full_of_data()).collect::<Vec<Speaker>>();
+		.into_iter().filter(|x| x.full_of_data()).collect::<Vec<_>>();
 
 	let mut index = 0;
 	let speaker_data = speakers.into_iter()
