@@ -9,17 +9,18 @@
 	src: url("Dust West.otf");
 }
 body {
-	background: #000;
+	background: #F2E0CA;
+	color: #670909;
 }
 svg {
 	display: block;
 	margin: 0 auto;
 	width: 1000px;
 }
-.text { fill: #f36218; }
-.revolver1 { fill: #f9c4e4; }
-.revolver2 { fill: #d91e25; }
-.revolver3 { fill: #f8f682; }
+.text { fill: #670909; }
+.revolver1 { fill: #A82310; }
+.revolver2 { fill: #D57C22; }
+.revolver3 { fill: #F9DA5B; }
 
 .map {
 	width: 100%;
@@ -31,15 +32,28 @@ svg {
 .box {
 	max-width: 1000px;
 	margin: 0 auto;
-	color: #f9c4e4;
 }
 
 h1 {
-	color: #f36218;
 	font-family: "Dust West";
 	font-size: 60px;
 	margin-bottom: 20px;
 	margin-top: 40px;
+}
+
+.speaker {
+	position: relative;
+	background: #D57C22;
+	margin: 60px 20px 60px 80px;
+	padding-left: 70px;
+	padding-top: 10px;
+	height: 90px;
+}
+.portrait {
+	position: absolute;
+	left: -70px;
+	top: -20px;
+	height: 140px;
 }
 
 </style>
@@ -66,31 +80,17 @@ h1 {
 
 </defs>
 
+<g transform="translate(0,30)">
 <text class="text" x="500" y="110" font-family="Dust West" font-size="130" text-anchor="middle">REVOLVER</text>
 <text class="text" x="500" y="350" font-family="Dust West" font-size="300" text-anchor="middle">CONF</text>
 <text class="text" x="500" y="630" font-family="Dust West" font-size="350" text-anchor="middle">2015</text>
+</g>
 
-<use x="0" y="0" xlink:href="#revolvers" />
+<use x="0" y="0" xlink:href="#revolvers" transform="translate(200) scale(-1 1)" />
 
-<use x="0" y="0" xlink:href="#revolvers" transform="translate(1000) scale(-1 1)" />
+<use x="0" y="0" xlink:href="#revolvers" transform="translate(800)" />
 
 </svg>
-
-<style>
-.speaker {
-	position: relative;
-	background: #222;
-	margin: 60px 20px 60px 80px;
-	padding-left: 70px;
-	height: 100px;
-}
-.portrait {
-	position: absolute;
-	left: -70px;
-	top: -20px;
-	height: 140px;
-}
-</style>
 
 <content id="speakers">
 <div class="box">
